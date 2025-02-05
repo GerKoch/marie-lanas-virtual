@@ -21,20 +21,6 @@ export default function () {
         </div>
 
         <div className="flex flex-col bg-pink-50 items-center justify-center px-2 w-full">
-
-
-          <div className="flex justify-end items-center p-2 m-2 ">
-            <div className="hidden lg:flex gap-7">
-              <div className="bg-gray-200 rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
-                <BsFacebook size={30} color="blue" />
-              </div>
-              <div className="bg-gray-200 rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
-                <BsInstagram size={30} color="brown" />
-              </div>
-            </div>
-          </div>
-
-
           <div className="flex flex-row items-center justify-between w-[100%] gap-2 p-2 m-2 ">
             <div className="w-full sm:w-[300px] md:w-[90%] relative">
               <input
@@ -44,8 +30,7 @@ export default function () {
               />
               <BsSearch className="absolute right-0 top-0 mr-3 mt-3 text-gray-400" size={20} />
             </div>
-
-            <div className="hidden lg:flex rounded-md p-[6px] text-[14] hover:bg-accent hover:text-white gap-4 text-gray-500 text-[30px]">
+            <div className="hidden lg:flex rounded-md p-[6px] pb-3 text-[14] hover:bg-accent hover:text-white gap-4 text-gray-500 text-[30px]">
               <div className="relative">
                 <HiOutlineShoppingBag size={50} />
                 <div className="bg-pink-600 rounded-full absolute top-0 right-0 w-[28px] h-[28px] text-[20px] text-white grid place-items-center translate-x-1 -translate-y-1">
