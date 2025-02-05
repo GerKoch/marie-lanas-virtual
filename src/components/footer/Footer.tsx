@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-left md:px-20 sm:flex-row mt-2 sm:gap-20 w-full ssm:w-fit sm:w-fit lg:w-[75%] lg:pl-20">
         <div className="flex flex-col text-xl w-[50%] ssm:w-fit ssm:pb-2">
           <h1 className="flex justify-center">Contacto</h1>
-          <p>Tel:+54 9 11 5164-6034</p>
+          <p>Tel:+54 9 336 4615513</p>
           <p>Marielanas@gmail.com</p>
         </div>
         <div className="flex w-full ssm:pb-2 lg:pl-96">
