@@ -22,7 +22,7 @@ export default {
 
       container: {
         center: true,
-        // padding: '10px'
+
       },
 
       colors: {

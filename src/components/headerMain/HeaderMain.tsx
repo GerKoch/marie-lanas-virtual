@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 export default function () {
   return (

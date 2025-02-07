@@ -4,7 +4,7 @@ import NewProducts from "@/components/newProducts/NewProducts";
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <Hero />
       <NewProducts />
     </main>

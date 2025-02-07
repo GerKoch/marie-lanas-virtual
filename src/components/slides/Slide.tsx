@@ -9,7 +9,7 @@ interface Props {
 
 export default function ({ img, title, mainTitle, price }: Props) {
   return (
-    <div className="outline-none border-none relative">
+    <div className="">
       {/* <div className="absolute left-[30px] md:left-[70px] max-w-[250px] sm:maw-w-[350px] top-[50%] -translate-y-[50%] space-y-2 lg:space-y-4 bg-[#ffffffa2] 
         sm:bg-transparent p-4 sm:p-0 rounded-lg sm:rounded-none">
       </div> */}

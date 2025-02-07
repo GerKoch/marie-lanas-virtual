@@ -10,8 +10,7 @@ import Footer from "@/components/footer/Footer";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
+import Navbar2 from "@/components/navbar/Navbar2";
 
 
 const geistSans = Geist({
@@ -24,11 +23,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// const poppinsFont = Poppins({
-//   variable: "--font-poppins-serif",
-//   subsets: ["latin"],
-//   weight: ["500", "700"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -43,11 +37,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white w-full`}
       >
         {/* <HeaderTop /> */}
-        <HeaderMain />
-        <Navbar />
+        {/* <HeaderMain /> */}
+        {/* <Navbar /> */}
+        <Navbar2 />
         {children}
         <div>
           <WhatsAppComponent />
