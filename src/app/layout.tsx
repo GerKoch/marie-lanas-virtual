@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white w-full`}
       >
-        {/* <HeaderTop /> */}
+        <HeaderTop />
         {/* <HeaderMain /> */}
         {/* <Navbar /> */}
         <Navbar2 />

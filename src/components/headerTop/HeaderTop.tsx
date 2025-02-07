@@ -1,22 +1,9 @@
-import { BsFacebook, BsInstagram } from "react-icons/bs";
-
 
 
 export default function () {
   return (
-    <div className="bg-pink-50 border-b border-pink-200 hidden sm:block">
-      <div className="container py-4">
-        <div className="flex justify-end items-center">
-          {/* <div className="hidden lg:flex gap-1">
-            <div className="bg-gray-200 rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
-              <BsFacebook />
-            </div>
-            <div className="bg-gray-200 rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
-              <BsInstagram />
-            </div>
-          </div> */}
-        </div>
-      </div>
+    <div className="flex justify-between items-center w-full text-black py-1 px-2 bg-pink-200 border-b-2 border-pink-700">
+      <span className="flex justify-center w-full text-xl">¡Enviamos tu pedido a todo el país!</span>
     </div>
   )
 }
