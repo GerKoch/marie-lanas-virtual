@@ -50,7 +50,6 @@ const NewProducts = () => {
           ))}
         </div>
       </div>
-
     </div>
   )
 }

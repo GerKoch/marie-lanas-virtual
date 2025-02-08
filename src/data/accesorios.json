@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Agujas circular",
+    "descripcion": "---",
+    "precio": 15.99,
+    "imagen": "/images/accessories/agujas-circular.jpg"
+
+  },
+  {
+    "id": 2,
+    "nombre": "Agujas crochet silver",
+    "descripcion": "Num.: 2, 4, 5, 6, 7, 8, 9",
+    "precio": 10.00,
+    "imagen": "/images/accessories/agujas-crochet-silver.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Agujas circular",
+    "descripcion": "---",
+    "precio": 10.00,
+    "imagen": ""
+
+  },
+  {
+    "id": 4,
+    "nombre": "Pulsera de Cuero",
+    "descripcion": "Pulsera de cuero genuino con detalles metálicos.",
+    "precio": 10.00,
+    "imagen": ""
+  }
+]
