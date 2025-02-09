@@ -2,8 +2,8 @@
 
 const Hilos = () => {
   return (
-    <div className="bg-white h-screen p-10">
-      <h1>Nuestros hilos</h1>
+    <div>
+      <h2 className="flex justify-center bg-pink-50 font-medium text-2xl p-4 drop-shadow-md">Nuestros hilos</h2>
       <h3>Madejas</h3>
       <h3>Ovillos</h3>
       <p>Soft 4/7 (cashmilon semi)</p>
@@ -12,6 +12,7 @@ const Hilos = () => {
       <p>MIA 3/16 (super fino aguja 2 o 3)</p>
       <p>Super Bebe Cisne</p>
     </div>
+
   )
 }
 

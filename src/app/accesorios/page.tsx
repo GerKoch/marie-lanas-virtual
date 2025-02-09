@@ -1,52 +1,141 @@
-import CarAccessories from "@/components/cardAccessories/CardAccessories"
+import CardAccessories from "@/components/cardAccessories/CardAccessories"
 
 
 const accessoriesData = [
   {
-    "title": "Agujas circular",
-    "descripcion": "---",
-    "price": 15.99,
-    "image": "/images/accessories/agujas-circular.jpg"
+    "title": "Aguja con luz",
+    "descripcion": "Num. 2.5, 4.5, 5, 6",
+    "price": "10.00",
+    "image": "/images/accessories/aguja-con-luz.jpg"
 
   },
   {
-    "title": "Agujas crochet silver",
-    "descripcion": "Num.: 2, 4, 5, 6, 7, 8, 9",
-    "price": 10.00,
-    "image": "/images/accessories/agujas-crochet-silver.jpg"
+    "title": "Agujas bordado chino",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-bordado-chino.jpg"
+  },
+  {
+    "title": "Agujas circulares",
+    "descripcion": "Num. 2.3, 3, 3.5, 4, 4.5, 5, 5.5, 6, 7, 8 ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-cirulares.jpg"
   },
   {
     "title": "Agujas crochet aluminio",
-    "descripcion": "---",
-    "price": 10.00,
+    "descripcion": "Num. 2, 2.5, 3, 3.5, 5, 5.5, 6, 7, 8, 9, 10, 12",
+    "price": "10.00",
     "image": "/images/accessories/agujas-crochet-aluminio.jpg"
 
   },
   {
-    "title": "Agujas tinecinas",
-    "descripcion": "Num.: 3.5, 4.5, 5.5, 6, 8",
-    "price": 10.00,
+    "title": "Agujas crochet mango silicona",
+    "descripcion": "Num. 2, 2.5, 3, 4, 4.5, 5, 5.5, 6, 7 ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-crochet-mango-silicona.jpg"
+  },
+  {
+    "title": "Agujas crochet plástico",
+    "descripcion": "Num. 14",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-crochet-plastico.jpg"
+
+  },
+  {
+    "title": "Agujas crochet silver",
+    "descripcion": "Num. 2, 4, 5, 6, 7, 8, 9 ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-crochet-silver.jpg"
+  },
+  {
+    "title": "Aguja tinecinas",
+    "descripcion": "Num. 3.5, 4.5, 5.5, 6, 8",
+    "price": "10.00",
     "image": "/images/accessories/agujas-tinecinas.jpg"
+
+  },
+  {
+    "title": "Agujas tricot (dos agujas)",
+    "descripcion": "Num. 2.5, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 8, 9, 10, 12, 14 ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-tricot-(dos-agujas).jpg"
+  },
+  {
+    "title": "Centímetro",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/centimetro.jpg"
+
+  },
+  {
+    "title": "Ganchos amigurumis",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/ganchos-amigurumis.jpg"
+  },
+  {
+    "title": "Mate plástico con bombilla",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/mate-bombilla-plastico.jpg"
+
+  },
+  {
+    "title": "Para sonajeros",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/para-sonajeros.jpg"
+  },
+  {
+    "title": "Pasa cinta",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/pasa-cinta.jpg"
+
+  },
+  {
+    "title": "Porta chupete",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/porta-chupete.jpg"
+  },
+  {
+    "title": "Telat plástico cuadro",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/telar-plastico-cuadro.jpg"
+
+  },
+  {
+    "title": "Agujas bordado ruso",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-bordado-ruso.jpg"
+
+  },
+  {
+    "title": "Toma puntos",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/toma-puntos.jpg"
   }
 ]
 
 const Accesorios = () => {
   return (
     <div>
-      <div className="container pt-16">
-        <h2 className="font-medium text-2xl pb-4">Nuestros trabajos</h2>
-        <div className="grid grid-cols-1 place-items-center sm:place-items-start sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-          gap-10 xl:gap-x-20 xl:gap-y-10">
-          {accessoriesData.map((accessorie, index) => (
-            <CarAccessories
-              key={index}
-              img={accessorie.image}
-              title={accessorie.title}
-              description={accessorie.descripcion}
-              price={accessorie.price}
-            />
-          ))}
-        </div>
+      <h2 className="flex justify-center bg-pink-50 font-medium text-2xl lg:text-5xl p-4 drop-shadow-md">Nuestros trabajos</h2>
+      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+          gap-10 xl:gap-6 p-10 drop-shadow-md">
+        {accessoriesData.map((accessorie, index) => (
+          <CardAccessories
+            key={index}
+            img={accessorie.image}
+            title={accessorie.title}
+            description={accessorie.descripcion}
+            price={accessorie.price}
+          />
+        ))}
       </div>
     </div>
   )
@@ -54,19 +143,6 @@ const Accesorios = () => {
 
 export default Accesorios
 
-// <div className="bg-white h-screen p-10">
-//   <h1 className="text-7xl">Accesorios</h1>
-//   <p>Agujas circular</p>
-//   <p>Agujas crochet</p>
-//   <p>2 Agujas</p>
-//   <p>Agujas tunecino</p>
-//   <p>Marca puntos</p>
-//   <p>Ganchos amigurumis</p>
-//   <p>Cascabel sonajero</p>
-//   <p>Mate plástico</p>
-//   <p>Agujas crochet con luz</p>
-//   <p>Bases de fibrofacil</p>
-//   <p>Aros de alambre para mandalas</p>
-// </div>
+
 
 

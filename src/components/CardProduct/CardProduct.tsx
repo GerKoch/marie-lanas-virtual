@@ -98,3 +98,4 @@ const CardProduct = ({ img, title, desc, rating, price }: Props) => {
 }
 
 export default CardProduct
+
