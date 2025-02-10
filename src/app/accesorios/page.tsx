@@ -100,7 +100,7 @@ const accessoriesData = [
     "image": "/images/accessories/porta-chupete.jpg"
   },
   {
-    "title": "Telat plástico cuadro",
+    "title": "Telar plástico cuadro",
     "descripcion": "---",
     "price": "10.00",
     "image": "/images/accessories/telar-plastico-cuadro.jpg"
@@ -124,9 +124,9 @@ const accessoriesData = [
 const Accesorios = () => {
   return (
     <div>
-      <h2 className="flex justify-center bg-pink-50 font-medium text-2xl lg:text-5xl p-4 drop-shadow-md">Nuestros trabajos</h2>
-      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-          gap-10 xl:gap-6 p-10 drop-shadow-md">
+      <h2 className="flex justify-center bg-pink-50 font-medium text-2xl lg:text-5xl p-4 drop-shadow-md">Accesorios</h2>
+      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
+          gap-16 p-16 drop-shadow-md">
         {accessoriesData.map((accessorie, index) => (
           <CardAccessories
             key={index}
