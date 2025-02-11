@@ -61,7 +61,7 @@ const Navbar2 = () => {
               <Link href="/lanas" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
               <Link href="/accesorios" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCEROSIOS</Link>
               <Link href="/ofertas" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
-              <Link href="/trabajos" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJO</Link>
+              <Link href="/trabajos" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
 
             </div>
           ) : (
