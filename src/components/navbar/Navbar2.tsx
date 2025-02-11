@@ -15,7 +15,7 @@ const Navbar2 = () => {
   return (
     <>
       <div className="flex justify-between items-center text-white h-[200px] py-6 px-8 md:px-20 bg-black border-b-8 border-pink-200 drop-shadow-md">
-        <Link href={"#"}>
+        <Link href={"/"}>
           <Image
             src="/images/Logo.png"
             alt="Logo"

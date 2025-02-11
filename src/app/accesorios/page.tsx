@@ -1,4 +1,4 @@
-import CardAccessories from "@/components/cardAccessories/CardAccessories"
+import CardAccessories from "@/components/CardProducts/CardProducts"
 
 
 const accessoriesData = [
@@ -6,8 +6,7 @@ const accessoriesData = [
     "title": "Aguja con luz",
     "descripcion": "Num. 2.5, 4.5, 5, 6",
     "price": "10.00",
-    "image": "/images/accessories/aguja-con-luz.jpg"
-
+    "image": "/images/accessories/agujas-con-luz.jpg"
   },
   {
     "title": "Agujas bordado chino",
@@ -19,14 +18,31 @@ const accessoriesData = [
     "title": "Agujas circulares",
     "descripcion": "Num. 2.3, 3, 3.5, 4, 4.5, 5, 5.5, 6, 7, 8 ",
     "price": "10.00",
-    "image": "/images/accessories/agujas-cirulares.jpg"
+    "image": "/images/accessories/agujas-circulares-1.jpg"
   },
   {
     "title": "Agujas crochet aluminio",
     "descripcion": "Num. 2, 2.5, 3, 3.5, 5, 5.5, 6, 7, 8, 9, 10, 12",
     "price": "10.00",
-    "image": "/images/accessories/agujas-crochet-aluminio.jpg"
-
+    "image": "/images/accessories/agujas-crochet-aluminio2.jpg"
+  },
+  {
+    "title": "Agujas crochet silver",
+    "descripcion": "Num. 2, 4, 5, 6, 7, 8, 9 ",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-crochet-aluminio1.jpg"
+  },
+  {
+    "title": "Toma puntos",
+    "descripcion": "Num.: ",
+    "price": "10.00",
+    "image": "/images/accessories/toma-puntos1.jpg"
+  },
+  {
+    "title": "Aguja tinecinas",
+    "descripcion": "Num. 3.5, 4.5, 5.5, 6, 8",
+    "price": "10.00",
+    "image": "/images/accessories/agujas-tinecinas1.jpg"
   },
   {
     "title": "Agujas crochet mango silicona",
@@ -42,36 +58,29 @@ const accessoriesData = [
 
   },
   {
-    "title": "Agujas crochet silver",
-    "descripcion": "Num. 2, 4, 5, 6, 7, 8, 9 ",
-    "price": "10.00",
-    "image": "/images/accessories/agujas-crochet-silver.jpg"
-  },
-  {
-    "title": "Aguja tinecinas",
-    "descripcion": "Num. 3.5, 4.5, 5.5, 6, 8",
-    "price": "10.00",
-    "image": "/images/accessories/agujas-tinecinas.jpg"
-
-  },
-  {
     "title": "Agujas tricot (dos agujas)",
     "descripcion": "Num. 2.5, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 8, 9, 10, 12, 14 ",
     "price": "10.00",
-    "image": "/images/accessories/agujas-tricot-(dos-agujas).jpg"
+    "image": "/images/accessories/agujas-tricot-(dos-agujas)1.jpg"
+  },
+  {
+    "title": "Pasa cinta",
+    "descripcion": "---",
+    "price": "10.00",
+    "image": "/images/accessories/pasa-cinta.jpg"
   },
   {
     "title": "Centímetro",
     "descripcion": "---",
     "price": "10.00",
-    "image": "/images/accessories/centimetro.jpg"
+    "image": "/images/accessories/centimetro-1.jpg"
 
   },
   {
     "title": "Ganchos amigurumis",
     "descripcion": "Num.: ",
     "price": "10.00",
-    "image": "/images/accessories/ganchos-amigurumis.jpg"
+    "image": "/images/accessories/ganchos-amigurumis1.jpg"
   },
   {
     "title": "Mate plástico con bombilla",
@@ -84,20 +93,14 @@ const accessoriesData = [
     "title": "Para sonajeros",
     "descripcion": "Num.: ",
     "price": "10.00",
-    "image": "/images/accessories/para-sonajeros.jpg"
+    "image": "/images/accessories/para-sonajeros1.jpg"
   },
-  {
-    "title": "Pasa cinta",
-    "descripcion": "---",
-    "price": "10.00",
-    "image": "/images/accessories/pasa-cinta.jpg"
 
-  },
   {
     "title": "Porta chupete",
     "descripcion": "Num.: ",
     "price": "10.00",
-    "image": "/images/accessories/porta-chupete.jpg"
+    "image": "/images/accessories/porta-chupete1.jpg"
   },
   {
     "title": "Telar plástico cuadro",
@@ -112,12 +115,6 @@ const accessoriesData = [
     "price": "10.00",
     "image": "/images/accessories/agujas-bordado-ruso.jpg"
 
-  },
-  {
-    "title": "Toma puntos",
-    "descripcion": "Num.: ",
-    "price": "10.00",
-    "image": "/images/accessories/toma-puntos.jpg"
   }
 ]
 
@@ -126,7 +123,7 @@ const Accesorios = () => {
     <div>
       <h2 className="flex justify-center bg-pink-50 font-medium text-2xl lg:text-5xl p-4 drop-shadow-md">Accesorios</h2>
       <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
-          gap-16 p-16 drop-shadow-md">
+          gap-16 p-10 lg:p-16 drop-shadow-md">
         {accessoriesData.map((accessorie, index) => (
           <CardAccessories
             key={index}
@@ -134,6 +131,7 @@ const Accesorios = () => {
             title={accessorie.title}
             description={accessorie.descripcion}
             price={accessorie.price}
+            waist={""}
           />
         ))}
       </div>
