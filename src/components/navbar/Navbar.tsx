@@ -4,9 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { AiOutlineClose } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
-import { HiMenuAlt1, HiMenuAlt2, HiMenuAlt3, HiMenuAlt4 } from "react-icons/hi"
-import { LuBrainCircuit } from "react-icons/lu";
+import { HiMenuAlt3 } from "react-icons/hi";
+
 
 
 const Navbar = () => {
@@ -113,99 +112,6 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
-// <nav className="bg-pink-50 p-4 sm:p-6 md:flex md:justify-between md:items-center shadow-lg">
-{/* <div className="container mx-auto flex justify-between items-baseline">
-  <div className="flex flex-grow">
-    <Image
-      src="/images/Mlogo.png"
-      alt="Logo"
-      width={200}
-      height={100}
-    />
-    <h1 className="flex items-center text-7xl">Marie Lanas</h1>
-  </div>
-
-  // <div className="">
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     HOME
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     HILADOS
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     ALGODONES
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     ACCESORIOS
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     OFERTAS
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     TEJIDOS
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     NOSOTROS
-  //   </Link>
-  //   <Link href="#" className="lg:mr-7 hover:text-pink-700">
-  //     CONTACTO
-  //   </Link>
-  // </div> */}
-
-// <div className="ssm:block lg:hidden flex z-50 ">
-//   {
-//     toggle ? (
-//       <AiOutlineClose onClick={closeMenu} size={50} className="" />
-//     ) : (
-//       <HiMenuAlt3 onClick={openMenu} size={50} className="text-slate-700" />
-//     )
-//   }
-// </div>
-//       </div>
-
-// <div className="ssm:block justify-end lg:hidden">
-//   {
-//     toggle ? (
-//       <div className="flex flex-col bg-pink-200 px-5 fixed w-full z-10 justify-end pt-5 pb-3">
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           HOME
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black  hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           HILADOS
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           ALGODONES
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           ACCESORIOS
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           OFERTAS
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           TEJIDOS
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           NOSOTROS
-//         </Link>
-//         <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-//           CONTACTO
-//         </Link>
-//       </div>
-//     ) : (
-//       <div></div>
-//     )
-//   }
-
-// </div>
-//     </nav>
-
-
-
-
 
 
 

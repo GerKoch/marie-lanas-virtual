@@ -7,7 +7,7 @@ interface Props {
   price: string;
 }
 
-export default function ({ img, title, mainTitle, price }: Props) {
+export default function Slide({ img }: Props) {
   return (
     <div className="">
       {/* <div className="absolute left-[30px] md:left-[70px] max-w-[250px] sm:maw-w-[350px] top-[50%] -translate-y-[50%] space-y-2 lg:space-y-4 bg-[#ffffffa2] 

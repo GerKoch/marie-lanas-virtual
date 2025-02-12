@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const componentNavbar = () => {
+const ComponentNavbar = () => {
 
   const [isThreadsOpen, setIsThreadsOpen] = useState(false);
   const [isCottonsOpen, setIsCottonsOpen] = useState(false);
@@ -77,4 +77,4 @@ const componentNavbar = () => {
   )
 }
 
-export default componentNavbar
+export default ComponentNavbar

@@ -1,21 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
-export default function () {
+export default function HeaderMain() {
   return (
     <div className="bg-pink-50 border-b border-pink-200 px-3">
       <div className="container sm:flex justify-between items-center">
         <div className="flex flex-row items-center font-bold text-6xl text-center pb-4 sm:pb-0 text-blackish w-[100%]">
-          <a href="/" className="">
+          <Link href="/" className="">
             <Image
               src="/images/Mlogo.png"
               alt="Logo"
               width={200}
               height={100}
             />
-          </a>
+          </Link>
           <h1 className="text-7xl">Marie Lanas</h1>
         </div>
 

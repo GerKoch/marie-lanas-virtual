@@ -1,4 +1,3 @@
-import CardAccessories from "@/components/CardProducts/CardProducts"
 import CardWorks from "@/components/cards/CardWorks"
 
 export interface Product {

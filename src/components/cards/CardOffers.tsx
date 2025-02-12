@@ -12,7 +12,7 @@ interface Props {
 }
 
 
-const CardOffers = ({ title, description, price, img }: Props) => {
+const CardOffers = ({ title, description, img }: Props) => {
   return (
     <div className="relative hover:bg bg-white">
       <Image

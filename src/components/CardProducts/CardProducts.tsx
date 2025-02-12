@@ -8,7 +8,7 @@ interface Props {
   price: string;
 }
 
-const CardProducts = ({ title, description, price, img }: Props) => {
+const CardProducts = ({ title, description, img }: Props) => {
   return (
     <div className="flex flex-col mx-auto hover:bg bg-white w-[100%] h-[500px] sm:h-[500px] md:h-[550px] gap-5">
       <div>

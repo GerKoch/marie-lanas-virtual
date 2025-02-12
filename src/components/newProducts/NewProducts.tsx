@@ -15,7 +15,7 @@ const NewProducts = () => {
             height={3000}
             className="h-full w-auto object-cover rounded-md"
           />
-          <div className="absolute top-[90%] right-52 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
             <a href="/lanas">LANAS</a>
           </div>
         </div>
@@ -28,7 +28,7 @@ const NewProducts = () => {
             height={3000}
             className="h-full w-full object-cover rounded-md"
           />
-          <div className="absolute top-[90%] right-52 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
             <a href="/hilos">HILOS</a>
           </div>
         </div>
@@ -41,7 +41,7 @@ const NewProducts = () => {
             height={3000}
             className="h-full w-auto object-cover rounded-md"
           />
-          <div className="absolute top-[90%] right-40 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
             <a href="/trabajos">TRABAJOS</a>
           </div>
         </div>

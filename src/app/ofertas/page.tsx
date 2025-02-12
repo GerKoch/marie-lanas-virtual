@@ -1,4 +1,3 @@
-import CardAccessories from "@/components/CardProducts/CardProducts"
 import CardOffers from "@/components/cards/CardOffers"
 
 const ofertasData = [

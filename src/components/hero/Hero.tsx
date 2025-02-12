@@ -3,9 +3,9 @@
 import Slider from "react-slick"
 import Slide from "../slides/Slide"
 
-export default function () {
+export default function Hero() {
 
-  let settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 3000,
