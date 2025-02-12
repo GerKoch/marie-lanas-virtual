@@ -4,39 +4,48 @@ import Image from "next/image"
 
 const NewProducts = () => {
   return (
-    <div>
-      <div className="container pt-16">
-        <h2 className="font-medium text-2xl pb-4">¡Tu lanería amiga!</h2>
-        <div className="grid grid-cols-1 place-items-center sm:place-items-start sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-          gap-10 xl:gap-x-20 xl:gap-y-10">
-          <div>
-            <a>Hilos</a>
-            <Image
-              src={"/images/bg2.jpg"}
-              alt={"Work1"}
-              width={3000}
-              height={3000}
-            />
-          </div>
-          <div>
-            <a>Lanas</a>
-            <Image
-              src={"/images/bg1.jpg"}
-              alt={"Work1"}
-              width={3000}
-              height={3000}
-            />
-          </div>
-          <div>
-            <a>Lanas</a>
-            <Image
-              src={"/images/works/work2/cardigan-pancito1.jpg"}
-              alt={"Work1"}
-              width={3000}
-              height={3000}
-            />
+    <div className="min-h-screen flex flex-col">
+      <div className="grid w-full h-full grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3
+          gap-10 pt-16 pb-16 p-2 lg:p-10 drop-shadow-md">
+        <div className="relative hover:bg bg-white">
+          <Image
+            src={"/images/bg/bg1.jpg"}
+            alt={"Work1"}
+            width={3000}
+            height={3000}
+            className="h-full w-auto object-cover rounded-md"
+          />
+          <div className="absolute top-[90%] right-52 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+            <a href="/lanas">LANAS</a>
           </div>
         </div>
+
+        <div className="relative hover:bg bg-white">
+          <Image
+            src={"/images/bg/bg2.jpg"}
+            alt={"Work1"}
+            width={3000}
+            height={3000}
+            className="h-full w-full object-cover rounded-md"
+          />
+          <div className="absolute top-[90%] right-52 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+            <a href="/hilos">HILOS</a>
+          </div>
+        </div>
+
+        <div className="relative hover:bg bg-white">
+          <Image
+            src={"/images/bg/bg3.jpg"}
+            alt={"Work1"}
+            width={3000}
+            height={3000}
+            className="h-full w-auto object-cover rounded-md"
+          />
+          <div className="absolute top-[90%] right-40 bg-transparent text-white py-1 text-2xl border-b-4 border-white">
+            <a href="/trabajos">TRABAJOS</a>
+          </div>
+        </div>
+
       </div>
     </div>
   )

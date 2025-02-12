@@ -1,5 +1,5 @@
 import { BsFacebook, BsInstagram } from "react-icons/bs"
-import { CiMail } from "react-icons/ci"
+
 
 
 const Footer = () => {
@@ -11,8 +11,8 @@ const Footer = () => {
           <p>Tel:+54 9 336 4615513</p>
           <p>Marielanas@gmail.com</p>
         </div>
-        <div className="flex items-center justify-center w-full ssm:pb-2 lg:pl-96">
-          <div className="flex flex-col sm:flex-row items-center justify-end gap-10 lg:w-[75%] lg:pl-10">
+        <div className="flex items-center justify-center w-full ssm:pb-2 lg:pl-40">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-items-start  gap-10 lg:w-[75%] lg:pl-10">
             <div className="bg-black rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
               <a href="https://www.facebook.com/Marietejidos" target="_blank">
                 <BsFacebook size={70} color="pink" />
