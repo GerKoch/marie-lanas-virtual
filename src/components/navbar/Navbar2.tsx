@@ -11,6 +11,12 @@ const Navbar2 = () => {
 
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
+  const handleClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsOpenMenu(false)
+    }
+  }
+
 
   return (
     <>
@@ -56,12 +62,12 @@ const Navbar2 = () => {
           isOpenMenu ? (
             <div className="bg-black flex flex-col w-full pt-5 pb-5 z-10 ">
 
-              <Link href="/" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HOME</Link>
-              <Link href="/hilos" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HILOS</Link>
-              <Link href="/lanas" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
-              <Link href="/accesorios" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCESORIOS</Link>
-              <Link href="/ofertas" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
-              <Link href="/trabajos" className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
+              <Link href="/" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HOME</Link>
+              <Link href="/hilos" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HILOS</Link>
+              <Link href="/lanas" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
+              <Link href="/accesorios" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCESORIOS</Link>
+              <Link href="/ofertas" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
+              <Link href="/trabajos" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
 
             </div>
           ) : (
@@ -75,3 +81,4 @@ const Navbar2 = () => {
 }
 
 export default Navbar2
+
