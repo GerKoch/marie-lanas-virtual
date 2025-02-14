@@ -1,177 +1,84 @@
 "use client";
 
-import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-import { AiOutlineClose } from "react-icons/ai";
-import { HiMenuAlt3 } from "react-icons/hi";
+import Image from "next/image"
+import { HiMenuAlt3 } from "react-icons/hi"
+import { useState } from "react";
 
 
 
-const Navbar = () => {
+const Navbar2 = () => {
 
-  const [toggle, setToggle] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  function openMenu() {
-    setToggle(true);
-  }
-
-  function closeMenu() {
-    setToggle(false);
+  const handleClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsOpenMenu(false)
+    }
   }
 
 
   return (
-    <nav className="flex items-center bg-pink-200">
-      <div className="bg-pink-200 w-[50%] container flex justify-center items-baseline">
-        <div className="flex flex-row ">
+    <>
+      <div className="flex justify-between items-center text-white h-[200px] py-6 px-8 md:px-20 bg-black border-b-8 border-pink-200 drop-shadow-md">
+        <Link href={"/"}>
           <Image
-            src="/images/Mlogo.png"
+            src="/images/Logo.png"
             alt="Logo"
             width={200}
             height={100}
-            className="ssm:hidden lg:flex"
+            className="w-52 lg:w-72 hover:scale-105 transition-all"
           />
-          <h1 className="flex items-center text-7xl lg:flex">Marie Lanas</h1>
+        </Link>
+        <div className="hidden lg:flex items-center gap-10  text-base">
+          <Link href="/" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">HOME</Link>
+          <Link href="/hilos" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">HILOS</Link>
+          <Link href="/lanas" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">LANAS</Link>
+          <Link href="/accesorios" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">ACCESORIOS</Link>
+          <Link href="/ofertas" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">OFERTAS</Link>
+          <Link href="/trabajos" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">TRABAJOS</Link>
         </div>
-        <div className="hidden lg:block">
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            HOME
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            HILADOS
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            ALGODONES
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            ACCESORIOS
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            OFERTAS
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            TEJIDOS
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            NOSOTROS
-          </Link>
-          <Link href="#" className="lg:mr-7 hover:text-pink-700">
-            CONTACTO
-          </Link>
+
+        {/* Buscador */}
+        {/* <div className="relative hidden md:flex items-center justify-center gap-3">
+          <input
+            className="border-pink-200 border-2 p-2 px-4 rounded-3xl w-[100%] focus:bg-slate-50 focus:outline-pink-300"
+            type="text"
+            placeholder="Buscar producto..."
+          />
+          <BsSearch className="absolute right-0 top-0 mr-3 mt-3 text-gray-400" size={20} />
+        </div> */}
+
+        {/* Menu Icon */}
+
+        <div className="lg:hidden block text-5xl cursor-pointer" onClick={() => setIsOpenMenu(!isOpenMenu)}>
+          <HiMenuAlt3 size={50} className="text-pink-200" />
         </div>
+
       </div>
 
-      <div className="ssm:block lg:hidden w-[25%] flex z-50 ">
+      <div className="ssm:block lg:hidden">
         {
-          toggle ? (
-            <AiOutlineClose onClick={closeMenu} size={50} className="" />
-          ) : (
-            <HiMenuAlt3 onClick={openMenu} size={50} className="text-slate-700" />
-          )
-        }
-      </div>
+          isOpenMenu ? (
+            <div className="bg-black flex flex-col w-full pt-5 pb-5 z-10 ">
 
-      <div className="ssm:block justify-end lg:hidden">
-        {
-          toggle ? (
-            <div className="flex flex-col bg-pink-200 px-5 fixed w-[100%] h-fit z-10 justify-start pt-5 pb-3">
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                HOME
-              </Link>
-              <Link href="#" className="flex justify-center text-black  hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                HILADOS
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                ALGODONES
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                ACCESORIOS
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                OFERTAS
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                TEJIDOS
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                NOSOTROS
-              </Link>
-              <Link href="#" className="flex justify-center text-black hover:text-pink-700 text-2xl mb-2 cursor-pointer">
-                CONTACTO
-              </Link>
+              <Link href="/" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HOME</Link>
+              <Link href="/hilos" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HILOS</Link>
+              <Link href="/lanas" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
+              <Link href="/accesorios" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCESORIOS</Link>
+              <Link href="/ofertas" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
+              <Link href="/trabajos" onClick={handleClick} className="text-pink-200 text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
+
             </div>
           ) : (
             <div></div>
           )
         }
-
       </div>
-    </nav>
+
+    </>
   )
 }
 
-export default Navbar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import Link from "next/link";
-
-
-
-// export default function () {
-//   return (
-//     <div className="hidden lg:block">
-//       <div className="bg-pink-50 border-t border-pink-200 ">
-//         <div className="flex w-fit gap-10 mx-auto font-medium py-4 text-blackish">
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             HOME
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             HILADOS
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             ALGODONES
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             ACCESORIOS
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             OFERTAS
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             TEJIDOS
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             NOSOTROS
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-//           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
-//             CONTACTO
-//             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
-//           </Link>
-
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
+export default Navbar2
 

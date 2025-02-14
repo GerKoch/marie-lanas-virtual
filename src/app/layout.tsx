@@ -8,7 +8,7 @@ import Footer from "@/components/footer/Footer";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Navbar2 from "@/components/navbar/Navbar2";
+import Navbar from "@/components/navbar/Navbar";
 
 
 const geistSans = Geist({
@@ -38,7 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white w-full`}
       >
         <HeaderTop />
-        <Navbar2 />
+        <Navbar />
         {children}
         <div>
           <WhatsAppComponent />
