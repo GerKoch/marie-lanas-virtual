@@ -1,4 +1,4 @@
-import CardAccessories from "@/components/CardProducts/CardProducts"
+import CardProducts from "@/components/CardProducts/CardProducts"
 
 
 const accessoriesData = [
@@ -125,7 +125,7 @@ const Accesorios = () => {
       <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
           gap-16 p-10 lg:p-16 drop-shadow-md">
         {accessoriesData.map((accessorie, index) => (
-          <CardAccessories
+          <CardProducts
             key={index}
             img={accessorie.image}
             title={accessorie.title}
