@@ -130,7 +130,6 @@ const Accesorios = () => {
             img={accessorie.image}
             title={accessorie.title}
             description={accessorie.descripcion}
-            price={accessorie.price}
             waist={""}
           />
         ))}

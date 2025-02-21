@@ -5,7 +5,7 @@ interface Props {
   title: string;
   description: string;
   waist: string;
-  // price: string;
+
 }
 
 const CardProducts = ({ title, description, img }: Props) => {
@@ -22,7 +22,6 @@ const CardProducts = ({ title, description, img }: Props) => {
       </div>
       <div className="flex flex-col justify-center items-center space-y-2 p-2 h-[30%]">
         <h2 className="flex items-center justify-center text-center text-black text-lg uppercase">{title}</h2>
-        {/* <h1>Colores disponibles</h1> */}
         <p className="flex text-center p-2">{description}</p>
       </div>
     </div>
