@@ -1,13 +1,23 @@
 import CardProducts from "@/components/CardProducts/CardProducts"
+import { initialData } from "@/seed/seed"
 
-const hilosData = [
-  {
-    "title": "LHO Nachito",
-    "descripcion": "02, 04, 06, 07, 08, 09, 10, 12, 14, 15, 17, 21, 24, 25, 28, 37, 38, 39, 40, 43, 54, 61, 65, 19, 62, 68, 67, 91, 107, 122, 138, 706, 6310, 6312, 6318",
-    "price": "",
-    "image": "/images/lanas/Lana-LHO-Nachito.jpg",
-  },
-]
+const hilosData = initialData.products;
+
+
+// const hilosData = [
+//   {
+//     "title": "LHO Nachito",
+//     "descripcion": "02, 04, 06, 07, 08, 09, 10, 12, 14, 15, 17, 21, 24, 25, 28, 37, 38, 39, 40, 43, 54, 61, 65, 19, 62, 68, 67, 91, 107, 122, 138, 706, 6310, 6312, 6318",
+//     "price": "",
+//     "image": "/images/lanas/Lana-LHO-Nachito.jpg",
+//   },
+//   {
+//     "title": "Lana Nube",
+//     "descripcion": "Soft 2/7",
+//     "price": "",
+//     "image": "/images/lanas/nube/IMG-20250219-WA0069.jpg",
+//   },
+// ]
 
 
 const Lanas = () => {
@@ -21,8 +31,8 @@ const Lanas = () => {
             key={index}
             img={accessorie.image}
             title={accessorie.title}
-            description={accessorie.descripcion}
-            price={accessorie.price}
+            description={accessorie.description}
+            // price={accessorie.price}
             waist={""}
           />
         ))}

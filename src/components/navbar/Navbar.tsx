@@ -39,17 +39,7 @@ const Navbar2 = () => {
           <Link href="/trabajos" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-xl">TRABAJOS</Link>
         </div>
 
-        {/* Buscador */}
-        {/* <div className="relative hidden md:flex items-center justify-center gap-3">
-          <input
-            className="border-pink-200 border-2 p-2 px-4 rounded-3xl w-[100%] focus:bg-slate-50 focus:outline-pink-300"
-            type="text"
-            placeholder="Buscar producto..."
-          />
-          <BsSearch className="absolute right-0 top-0 mr-3 mt-3 text-gray-400" size={20} />
-        </div> */}
 
-        {/* Menu Icon */}
 
         <div className="lg:hidden block text-5xl cursor-pointer" onClick={() => setIsOpenMenu(!isOpenMenu)}>
           <HiMenuAlt3 size={50} className="text-pink-200" />
@@ -81,4 +71,14 @@ const Navbar2 = () => {
 }
 
 export default Navbar2
+
+
+{/* <div className="relative hidden md:flex items-center justify-center gap-3">
+          <input
+            className="border-pink-200 border-2 p-2 px-4 rounded-3xl w-[100%] focus:bg-slate-50 focus:outline-pink-300"
+            type="text"
+            placeholder="Buscar producto..."
+          />
+          <BsSearch className="absolute right-0 top-0 mr-3 mt-3 text-gray-400" size={20} />
+        </div> */}
 

@@ -13,7 +13,7 @@ const ComponentNavbar = () => {
   return (
     <div className="w-full h-24 shadow-md bg-pink-200">
       <div className="flex justify-center items-center h-full w-full px-4">
-        <ul className="flex w-fit gap-10 mx-auto font-medium py-4 text-blackish">
+        <ul className="flex w-fit gap-10 mx-auto font-medium py-4 text-black">
           <Link href="#" className="relative hover:bg-accent hover:transition-all hover:duration-400 rounded">
             HOME
             <span className="absolute bottom-[-5px] left-0 w-full h-[3px] bg-accent scale-0 origin-left transition-all duration-400"></span>
