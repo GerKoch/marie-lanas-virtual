@@ -33,7 +33,6 @@ const Hilos = () => {
             key={index}
             img={accessorie.image}
             title={accessorie.title}
-            description={accessorie.descripcion}
           />
         ))}
       </div>

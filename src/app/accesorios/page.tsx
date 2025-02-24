@@ -129,8 +129,6 @@ const Accesorios = () => {
             key={index}
             img={accessorie.image}
             title={accessorie.title}
-            description={accessorie.descripcion}
-            waist={""}
           />
         ))}
       </div>
