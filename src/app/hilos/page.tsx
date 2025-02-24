@@ -34,7 +34,6 @@ const Hilos = () => {
             img={accessorie.image}
             title={accessorie.title}
             description={accessorie.descripcion}
-            waist={""}
           />
         ))}
       </div>
