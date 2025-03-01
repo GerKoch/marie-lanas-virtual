@@ -11,7 +11,7 @@ export default function Hero() {
     speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     pauseOnHover: true,
     // arrows: true,
   }
