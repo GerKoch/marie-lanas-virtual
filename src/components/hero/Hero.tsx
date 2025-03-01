@@ -11,32 +11,32 @@ export default function Hero() {
     speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    // pauseOnHover: false,
+    // autoplay: true,
+    pauseOnHover: true,
     // arrows: true,
   }
 
   const slideData = [
     {
-      img: "/images/slide1.jpg",
+      img: "/images/works/work1/chaleco-granix1.jpg",
       title: "Trending Item One",
       mainTitle: "Picture one",
       price: "$2000"
     },
     {
-      img: "/images/slide2.jpg",
+      img: "/images/works/work6/sueter3.jpg",
       title: "Trending Item Two",
       mainTitle: "Picture one",
       price: "$1500"
     },
     {
-      img: "/images/slide3.jpg",
+      img: "/images/works/work5/bufanda-granix3.jpg",
       title: "Trending Item Tree",
       mainTitle: "Picture one",
       price: "$3000"
     },
     {
-      img: "/images/slide4.jpg",
+      img: "/images/works/work3/sueter-combinado2.jpg",
       title: "Trending Item Four",
       mainTitle: "Picture one",
       price: "$2000"
@@ -45,7 +45,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="bg-pink-50 pt-0 lg:pt-0 m-0 ">
+      <div className="pt-0 lg:pt-0 m-0">
         <Slider {...settings}>
           {slideData.map((item, index) => (
             <Slide
