@@ -31,7 +31,7 @@ const Navbar2 = () => {
           />
         </Link>
         <div className="hidden lg:flex items-center gap-5 text-base pb-1">
-          <Link href="/" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">HOME</Link>
+          <Link href="/" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">INICIO</Link>
           <Link href="/hilos" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">HILOS</Link>
           <Link href="/lanas" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">LANAS</Link>
           <Link href="/accesorios" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">ACCESORIOS</Link>
@@ -50,15 +50,13 @@ const Navbar2 = () => {
       <div className="ssm:block lg:hidden">
         {
           isOpenMenu ? (
-            <div className="bg-white flex flex-col w-full pt-5 pb-5 z-10 ">
-
-              <Link href="/" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HOME</Link>
-              <Link href="/hilos" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HILOS</Link>
-              <Link href="/lanas" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
-              <Link href="/accesorios" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCESORIOS</Link>
-              <Link href="/ofertas" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
-              <Link href="/trabajos" onClick={handleClick} className="text-black text-2xl list-none w-full text-center p-4 pr-10 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
-
+            <div className="absolute bg-white flex flex-col w-full py-5 z-10 ">
+              <Link href="/" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">INICIO</Link>
+              <Link href="/hilos" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">HILOS</Link>
+              <Link href="/lanas" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">LANAS</Link>
+              <Link href="/accesorios" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">ACCESORIOS</Link>
+              <Link href="/ofertas" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">OFERTAS</Link>
+              <Link href="/trabajos" onClick={handleClick} className="text-black text-2xl list-none w-full text-center px-4 py-2 hover:bg-pink-400 hover:text-white transition-all cursor-pointer">TRABAJOS</Link>
             </div>
           ) : (
             <div></div>

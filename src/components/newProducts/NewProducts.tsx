@@ -6,7 +6,7 @@ import Link from "next/link"
 const NewProducts = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="grid w-full h-full grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10 pt-16 pb-16 p-2 lg:p-10 drop-shadow-md">
+      <div className="grid w-full h-full grid-cols-1 sm:grid-cols-3 gap-10 py-3 p-2 lg:p-10 drop-shadow-md">
         <Link href="/hilos" className="relative hover:bg bg-white">
           <Image
             src={"/images/bg/bg2.jpg"}

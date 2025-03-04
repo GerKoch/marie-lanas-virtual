@@ -25,7 +25,7 @@ const hilosData = [
 const Hilos = () => {
   return (
     <div>
-      <h2 className="flex justify-start bg-white font-medium text-2xl lg:text-2xl px-10 pt-3 lg:px-16 drop-shadow-md">Hilos</h2>
+      <h2 className="flex justify-start bg-white font-medium text-2xl lg:text-2xl px-10 py-3 lg:px-16 drop-shadow-md">Hilos</h2>
       <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
           gap-16 p-10 lg:p-16 drop-shadow-md">
         {hilosData.map((accessorie, index) => (

@@ -1,36 +1,33 @@
 import { BsFacebook, BsInstagram } from "react-icons/bs"
 
-
-
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-black text-white lg:gap-4 ssm:gap-1 pt-2">
-      <div className="flex flex-col items-center justify-left md:px-20 sm:flex-row mt-2 sm:gap-20 w-full ssm:w-fit sm:w-fit lg:w-[75%] lg:pl-20">
-        <div className="flex flex-col text-xl w-[50%] ssm:w-fit ssm:pb-2">
-          <h1 className="flex justify-center">Contacto</h1>
+    <div className="flex flex-col justify-center items-center p-4 bg-black text-slate-200 lg:gap-0 pt-2">
+      <div className="flex flex-col lg:flex-row gap-2">
+        <div className="flex flex-col items-center">
+          <h3 className="font-bold">Contacto:</h3>
           <p>Tel:+54 9 336 4615513</p>
           <p>Marielanas@gmail.com</p>
         </div>
-        <div className="flex items-center justify-center w-full ssm:pb-2 lg:pl-40">
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-items-start  gap-10 lg:w-[75%] lg:pl-10">
-            <div className="bg-black rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
-              <a href="https://www.facebook.com/Marietejidos" target="_blank">
-                <BsFacebook size={70} color="pink" />
-              </a>
 
+        <div className="flex flex-col items-center justify-center w-full ssm:pb-2 lg:pl-40 gap-0">
+          <h1 className="font-bold">Redes sociales:</h1>
+          <div className="flex flex-row">
+            <div className="bg-black rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-pink-00">
+              <a href="https://www.facebook.com/Marietejidos" target="_blank">
+                <BsFacebook size={30} />
+              </a>
             </div>
-            <div className="bg-black rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-white">
+            <div className="bg-black rounded-md p-[6px] text-[14] cursor-pointer hover:bg-accent hover:text-pink-200">
               <a href="https://www.instagram.com/m.arie_lanas/" target="_blank">
-                <BsInstagram size={70} color="pink" />
+                <BsInstagram size={30} />
               </a>
             </div>
           </div>
         </div>
-
       </div>
-
-      <div className="grid items-center justify-center text-sm w-full pb-2 ">
-        <p className="text-xl">Copyright &copy; 2025 - Marie lanas</p>
+      <div className="flex w-full justify-center pt-1">
+        <p>Copyright &copy; 2025 - Marie lanas</p>
       </div>
     </div>
   )

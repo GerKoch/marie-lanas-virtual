@@ -220,8 +220,8 @@ export const initialData: SeedData = {
     },
 
     {
-      title: "Mia Click",
-      description: "Soft 4/7",
+      title: "Mia",
+      description: "Click - Soft 4/7",
       image: "/images/lanas/mia/IMG-20250219-WA0115.jpg",
     },
     {
@@ -280,18 +280,18 @@ export const initialData: SeedData = {
       image: "/images/lanas/mia/IMG-20250219-WA0133.jpg",
     },
     {
-      title: "Mia Malena",
-      description: "Soft 4/7",
+      title: "Mia",
+      description: "Malena - Soft 4/7",
       image: "/images/lanas/mia/IMG-20250219-WA0134.jpg",
     },
     {
-      title: "Mia Malena",
-      description: "Soft 4/7",
+      title: "Mia",
+      description: "Malena - Soft 4/7",
       image: "/images/lanas/mia/IMG-20250219-WA0135.jpg",
     },
     {
-      title: "Mia Click",
-      description: "Soft 4/7",
+      title: "Mia",
+      description: "Click - Soft 4/7",
       image: "/images/lanas/mia/IMG-20250219-WA0136.jpg",
     },
     {

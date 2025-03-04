@@ -8,7 +8,7 @@ export default function Hero() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -45,15 +45,18 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="pt-0 lg:pt-0 m-0">
+      <div className="overflow-hidden m-0 p-0">
         <Slider {...settings}>
           {slideData.map((item, index) => (
-            <Slide
-              key={index}
-              img={item.img}
-              title={item.title}
-              mainTitle={item.mainTitle}
-              price={item.price} />
+            <div key={index} className="overflow-hidden m-0 p-0">
+              <Slide
+                key={index}
+                img={item.img}
+                title={item.title}
+                mainTitle={item.mainTitle}
+                price={item.price}
+              />
+            </div>
           ))}
         </Slider>
       </div>
