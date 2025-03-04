@@ -1,6 +1,5 @@
 import CardWools from "@/components/cardWools/CardWools"
 import { initialData } from "@/seed/seed"
-import Link from "next/link"
 
 const lanasData = initialData.products
 
