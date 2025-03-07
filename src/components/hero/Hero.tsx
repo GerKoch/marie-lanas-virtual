@@ -4,7 +4,6 @@ import Slider from "react-slick"
 import Slide from "../slides/Slide"
 
 export default function Hero() {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -13,7 +12,6 @@ export default function Hero() {
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: true,
-    // arrows: true,
   }
 
   const slideData = [

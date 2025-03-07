@@ -33,7 +33,6 @@ const ofertasData = [
   },
 ]
 
-
 const Ofertas = () => {
   return (
     <div>

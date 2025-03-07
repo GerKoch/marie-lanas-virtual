@@ -14,7 +14,6 @@ const Lanas = () => {
     <div className="min-h-screen flex flex-col justify-center items-center">
       <h2 className="w-screen flex justify-center bg-white font-medium text-2xl py-3 drop-shadow-md">Lanas</h2>
       <div className="w-full max-w-7xl p-6 lg:p-16 flex flex-col lg:flex-row lg:gap-8">
-
         <div className="w-full lg:w-[320px] bg-gray-100 p-5 mb-8 lg:mb-0 rounded-sm">
           <h3 className="text-xl border-b-2 border-slate-300 pb-2 mb-4">Marcas</h3>
           <ul className="text-lg">
@@ -32,7 +31,6 @@ const Lanas = () => {
             </li>
           </ul>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:p-0">
           {filteredProducts.map((accessorie, index) => (
             <CardProducts
@@ -42,7 +40,6 @@ const Lanas = () => {
             />
           ))}
         </div>
-
       </div>
     </div >
   )

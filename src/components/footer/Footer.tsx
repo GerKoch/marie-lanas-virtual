@@ -9,7 +9,6 @@ const Footer = () => {
           <p>Tel:+54 9 336 4615513</p>
           <p>Marielanas@gmail.com</p>
         </div>
-
         <div className="flex flex-col items-center justify-center w-full ssm:pb-2 lg:pl-40 gap-0">
           <h1 className="font-bold">Redes sociales:</h1>
           <div className="flex flex-row">

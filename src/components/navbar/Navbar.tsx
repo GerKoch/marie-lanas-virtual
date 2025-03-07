@@ -5,10 +5,7 @@ import Image from "next/image"
 import { HiMenuAlt3 } from "react-icons/hi"
 import { useState } from "react";
 
-
-
-const Navbar2 = () => {
-
+const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleClick = () => {
@@ -16,7 +13,6 @@ const Navbar2 = () => {
       setIsOpenMenu(false)
     }
   }
-
 
   return (
     <>
@@ -38,15 +34,10 @@ const Navbar2 = () => {
           <Link href="/ofertas" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">OFERTAS</Link>
           <Link href="/trabajos" className="p-3 hover:text-pink-500 transition-all cursor-pointer text-md">TRABAJOS</Link>
         </div>
-
-
-
         <div className="lg:hidden block text-5xl cursor-pointer" onClick={() => setIsOpenMenu(!isOpenMenu)}>
           <HiMenuAlt3 size={50} className="text-black" />
         </div>
-
       </div>
-
       <div className="ssm:block lg:hidden">
         {
           isOpenMenu ? (
@@ -63,20 +54,10 @@ const Navbar2 = () => {
           )
         }
       </div>
-
     </>
   )
 }
 
-export default Navbar2
+export default Navbar
 
-
-{/* <div className="relative hidden md:flex items-center justify-center gap-3">
-          <input
-            className="border-pink-200 border-2 p-2 px-4 rounded-3xl w-[100%] focus:bg-slate-50 focus:outline-pink-300"
-            type="text"
-            placeholder="Buscar producto..."
-          />
-          <BsSearch className="absolute right-0 top-0 mr-3 mt-3 text-gray-400" size={20} />
-        </div> */}
 

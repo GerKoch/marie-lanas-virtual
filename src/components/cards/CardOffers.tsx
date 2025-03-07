@@ -1,6 +1,4 @@
-
 import Image from "next/image";
-
 
 interface Props {
   id: number;

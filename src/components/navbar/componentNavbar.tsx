@@ -3,10 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-
-
 const ComponentNavbar = () => {
-
   const [isThreadsOpen, setIsThreadsOpen] = useState(false);
   const [isCottonsOpen, setIsCottonsOpen] = useState(false);
 

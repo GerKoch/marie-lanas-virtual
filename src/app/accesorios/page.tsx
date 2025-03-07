@@ -1,6 +1,5 @@
 import CardProducts from "@/components/CardProducts/CardProducts"
 
-
 const accessoriesData = [
   {
     "title": "Aguja con luz",

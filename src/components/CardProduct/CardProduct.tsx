@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
-
 interface Props {
   img: string;
   title: string;
@@ -9,7 +8,6 @@ interface Props {
   rating: number;
   price: string;
 }
-
 
 const CardProduct = ({ img, title, desc, rating, price }: Props) => {
 
@@ -85,7 +83,6 @@ const CardProduct = ({ img, title, desc, rating, price }: Props) => {
         <h2 className="text-accent font-medium uppercase">{title}</h2>
         <p className="text-gray-700 max-w-[150px]">{desc}</p>
         <div>{generateRating(rating)}</div>
-
         <div className="font-bold flex gap-4">
           ${price}
           <del className="text-gray-500 font-normal">

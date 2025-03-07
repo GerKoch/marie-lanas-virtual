@@ -1,7 +1,5 @@
-
 import Image from "next/image";
 import ProductPrice from "../DescuentoProducto/ProductPriceProps ";
-
 
 interface Props {
   id: number;
@@ -11,7 +9,6 @@ interface Props {
   waist: string;
   price: number;
 }
-
 
 export const trabajosData = {
 
@@ -85,9 +82,6 @@ const CardWorks = ({ title, description, price, img }: Props) => {
         <div className="font-bold text-base flex gap-4">
           <ProductPrice price={price} />
         </div>
-        {/* <button className="flex justify-center bg-pink-100 hover:bg-pink-300 text-black font-bolder py-2 px-4 w-48 rounded-md border-b-2">
-          ver detalles
-        </button> */}
       </div>
     </div>
   )

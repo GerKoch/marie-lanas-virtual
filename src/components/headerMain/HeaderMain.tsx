@@ -19,7 +19,6 @@ export default function HeaderMain() {
           </Link>
           <h1 className="text-7xl">Marie Lanas</h1>
         </div>
-
         <div className="flex flex-col bg-pink-50 items-center justify-center px-2 w-full">
           <div className="flex flex-row items-center justify-between w-[100%] gap-2 p-2 m-2 ">
             <div className="w-full sm:w-[300px] md:w-[90%] relative">
