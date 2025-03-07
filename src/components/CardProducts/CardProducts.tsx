@@ -7,17 +7,17 @@ interface Props {
 
 const CardProducts = ({ title, img }: Props) => {
   return (
-    <div className="flex flex-col mx-auto hover:bg bg-white w-[100%] h-full rounded">
+    <div className="flex flex-col mx-auto hover:bg-gray-100 bg-white w-full rounded-sm shadow-lg overflow-hidden">
       <div>
         <Image
           src={img}
           alt={title}
-          width={200}
-          height={300}
-          className="object-cover w-full h-[350px] rounded-t"
+          width={300}
+          height={400}
+          className="object-cover w-full h-[350px] rounded-t-sm"
         />
       </div>
-      <div className="flex flex-col justify-center items-center space-y-1 py-3 h-full">
+      <div className="flex flex-col justify-center items-center space-y-2 py-3">
         <h2 className="flex items-center justify-center text-center text-black text-lg">{title}</h2>
       </div>
     </div>

@@ -4,24 +4,20 @@ import CardProducts from "@/components/CardProducts/CardProducts"
 import { initialData } from "@/seed/seed"
 import { useState } from "react"
 
-
 const lanasData = initialData.products;
 
-
 const Lanas = () => {
-
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
-
   const filteredProducts = selectedBrand ? lanasData.filter((product) => product.title === selectedBrand) : lanasData;
 
   return (
-    <div>
-      <h2 className="flex justify-start bg-white font-medium text-2xl lg:text-2xl px-10 py-3 lg:px-16 drop-shadow-md">Lanas</h2>
-      <div className="flex flex-col lg:flex-row justify-center p-1 pt-16">
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <h2 className="w-screen flex justify-center bg-white font-medium text-2xl py-3 drop-shadow-md">Lanas</h2>
+      <div className="w-full max-w-7xl p-6 lg:p-16 flex flex-col lg:flex-row lg:gap-8">
 
-        <div className="w-[320px] h-full bg-gray-100 p-5 mx-10">
-          <h3 className="text-xl border-b-2 border-slate-300">Marcas</h3>
-          <ul className="text-xl">
+        <div className="w-full lg:w-[320px] bg-gray-100 p-5 mb-8 lg:mb-0 rounded-sm">
+          <h3 className="text-xl border-b-2 border-slate-300 pb-2 mb-4">Marcas</h3>
+          <ul className="text-lg">
             <li className="pt-4 hover:text-pink-500 cursor-pointer" onClick={() => setSelectedBrand("Nube")}>
               Nube
             </li>
@@ -37,7 +33,7 @@ const Lanas = () => {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-16 p-10 lg:p-16 lg:pt-0 drop-shadow-md">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:p-0">
           {filteredProducts.map((accessorie, index) => (
             <CardProducts
               key={index}
