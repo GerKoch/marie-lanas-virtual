@@ -1,15 +1,12 @@
-
 interface SeedProduct {
   title: string;
   description: string;
   image: string;
 }
 
-
 interface SeedData {
   products: SeedProduct[],
 }
-
 
 export const initialData: SeedData = {
   products: [
