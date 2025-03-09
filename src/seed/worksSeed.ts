@@ -150,7 +150,7 @@ export const worksData: Product[] = [
     description: "Hilo Fidelio",
     waist: "",
     price: 123.000,
-    image: "/images/works/work18/Remera1.jpg"
+    image: "/images/works/work18/remera1.jpg"
   },
   {
     id: 19,
