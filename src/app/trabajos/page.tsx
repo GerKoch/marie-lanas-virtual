@@ -9,7 +9,7 @@ const Trabajos = () => {
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
   const filteredProducts = selectedBrand ? worksData.filter((product) => product.category.toLocaleLowerCase() === selectedBrand.toLocaleLowerCase()) : worksData;
 
-  const brands = ["Mujer", "Niño", "Bebé", "Mostrar todos"]
+  const brands = ["Mujer", "Niño", "Bebé"]
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
