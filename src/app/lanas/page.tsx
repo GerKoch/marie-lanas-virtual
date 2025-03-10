@@ -35,7 +35,7 @@ const Lanas = () => {
             </li>
           </ul>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:p-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:p-0 lg:w-[800px]">
           {filteredProducts.map((accessorie, index) => (
             <CardProducts
               key={index}

@@ -5,6 +5,7 @@ export interface Product {
   waist: string;
   image: string;
   price: number;
+  category: string;
 }
 
 export const worksData: Product[] = [
@@ -14,7 +15,8 @@ export const worksData: Product[] = [
     description: "Lana LHO",
     waist: "1, 2 y 3",
     price: 145.000,
-    image: "/images/works/work1/chaleco-granix1.jpg"
+    image: "/images/works/work1/chaleco-granix1.jpg",
+    category: "Mujer",
   },
   {
     id: 2,
@@ -22,7 +24,8 @@ export const worksData: Product[] = [
     description: "Lana cisne Semi gorda",
     waist: "2 super ancho",
     price: 212.000,
-    image: "/images/works/work2/cardigan-pancito1.jpg"
+    image: "/images/works/work2/cardigan-pancito1.jpg",
+    category: "Mujer",
   },
   {
     id: 3,
@@ -30,7 +33,8 @@ export const worksData: Product[] = [
     description: "Lana 2/2",
     waist: "1, 2, 3",
     price: 189.000,
-    image: "/images/works/work3/sueter-combinado1.jpg"
+    image: "/images/works/work3/sueter-combinado1.jpg",
+    category: "Mujer",
   },
   {
     id: 4,
@@ -38,7 +42,8 @@ export const worksData: Product[] = [
     description: "Lana idlio LHO",
     waist: "1, 2, 3",
     price: 189.000,
-    image: "/images/works/work4/chaleco-trenza1.jpg"
+    image: "/images/works/work4/chaleco-trenza1.jpg",
+    category: "Mujer",
   },
   {
     id: 5,
@@ -46,7 +51,8 @@ export const worksData: Product[] = [
     description: "Lana idlio LHO",
     waist: "",
     price: 106.000,
-    image: "/images/works/work5/bufanda-granix1.jpg"
+    image: "/images/works/work5/bufanda-granix1.jpg",
+    category: "Mujer",
   },
   {
     id: 6,
@@ -54,7 +60,8 @@ export const worksData: Product[] = [
     description: "Lana 2/2",
     waist: "",
     price: 189.000,
-    image: "/images/works/work6/sueter1.jpg"
+    image: "/images/works/work6/sueter1.jpg",
+    category: "Mujer",
   },
   {
     id: 7,
@@ -62,7 +69,8 @@ export const worksData: Product[] = [
     description: "Lana cashmilon",
     waist: "",
     price: 78.000,
-    image: "/images/works/work7/gorro-capucha1.jpg"
+    image: "/images/works/work7/gorro-capucha1.jpg",
+    category: "Mujer",
   },
   {
     id: 8,
@@ -70,7 +78,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 134.000,
-    image: "/images/works/work8/chaleco1.jpg"
+    image: "/images/works/work8/chaleco1.jpg",
+    category: "Mujer",
   },
   {
     id: 9,
@@ -78,7 +87,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 167.000,
-    image: "/images/works/work9/sueter1.jpg"
+    image: "/images/works/work9/sueter1.jpg",
+    category: "Mujer",
   },
   {
     id: 10,
@@ -86,7 +96,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 145.000,
-    image: "/images/works/work10/poyera1.jpg"
+    image: "/images/works/work10/poyera1.jpg",
+    category: "Mujer",
   },
   {
     id: 11,
@@ -94,7 +105,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 245.000,
-    image: "/images/works/work11/vestido1.jpg"
+    image: "/images/works/work11/vestido1.jpg",
+    category: "Mujer",
   },
   {
     id: 12,
@@ -102,7 +114,8 @@ export const worksData: Product[] = [
     description: "Lana",
     waist: "",
     price: 100,
-    image: "/images/works/work12/gorro1.jpg"
+    image: "/images/works/work12/gorro1.jpg",
+    category: "Mujer",
   },
   {
     id: 13,
@@ -110,7 +123,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 34.000,
-    image: "/images/works/work13/gorro1.jpg"
+    image: "/images/works/work13/gorro1.jpg",
+    category: "Mujer",
   },
   {
     id: 14,
@@ -118,7 +132,8 @@ export const worksData: Product[] = [
     description: "Lana",
     waist: "",
     price: 100,
-    image: "/images/works/work14/cartera1.jpg"
+    image: "/images/works/work14/cartera1.jpg",
+    category: "Mujer",
   },
   {
     id: 15,
@@ -126,7 +141,8 @@ export const worksData: Product[] = [
     description: "Lana",
     waist: "",
     price: 100,
-    image: "/images/works/work15/cartera1.jpg"
+    image: "/images/works/work15/cartera1.jpg",
+    category: "Mujer",
   },
   {
     id: 16,
@@ -134,7 +150,8 @@ export const worksData: Product[] = [
     description: "Lana",
     waist: "",
     price: 100,
-    image: "/images/works/work16/chaleco1.jpg"
+    image: "/images/works/work16/chaleco1.jpg",
+    category: "Mujer",
   },
   {
     id: 17,
@@ -142,7 +159,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 134.000,
-    image: "/images/works/work17/chaleco1.jpg"
+    image: "/images/works/work17/chaleco1.jpg",
+    category: "Mujer",
   },
   {
     id: 18,
@@ -150,7 +168,8 @@ export const worksData: Product[] = [
     description: "Hilo Fidelio",
     waist: "",
     price: 123.000,
-    image: "/images/works/work18/remera1.jpg"
+    image: "/images/works/work18/remera1.jpg",
+    category: "Mujer",
   },
   {
     id: 19,
@@ -158,7 +177,8 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 39.000,
-    image: "/images/works/work19/gorro1.jpg"
+    image: "/images/works/work19/gorro1.jpg",
+    category: "Mujer",
   },
   {
     id: 20,
@@ -166,7 +186,178 @@ export const worksData: Product[] = [
     description: "Hilo de algodón",
     waist: "",
     price: 134.000,
-    image: "/images/works/work20/chaleco1.jpg"
+    image: "/images/works/work20/chaleco1.jpg",
+    category: "Mujer",
   },
-
+  {
+    id: 21,
+    title: "Sueter",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work21/sueter1.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 22,
+    title: "Sueter",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work22/sueter1.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 23,
+    title: "Sueter",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work23/sueter1.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 24,
+    title: "Gorro",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work24/gorro1.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 25,
+    title: "Gorro",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work25/gorro2.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 26,
+    title: "Bolso",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work26/bolso2.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 27,
+    title: "Cuello",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work27/cuello2.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 28,
+    title: "Pantalon",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work28/pantalon4.jpg",
+    category: "Mujer",
+  },
+  {
+    id: 29,
+    title: "Oso",
+    description: "Amigurumi",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work29/oso1.jpg",
+    category: "Niño",
+  },
+  {
+    id: 30,
+    title: "Oso",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work30/Oso7.jpg",
+    category: "Niño",
+  },
+  {
+    id: 31,
+    title: "Body",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work31/IMG-20250308-WA0034.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 32,
+    title: "Gorro",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work32/IMG-20250308-WA0040.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 33,
+    title: "Gorro",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work33/IMG-20250308-WA0044.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 34,
+    title: "Chaleco",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work34/IMG-20250308-WA0047.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 35,
+    title: "Chaleco",
+    description: "Amigurumi",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work35/IMG-20250308-WA0048.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 36,
+    title: "Campera",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work36/IMG-20250308-WA0051.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 37,
+    title: "Body",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work37/IMG-20250308-WA0052.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 38,
+    title: "Body",
+    description: "Amigurumi",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work38/IMG-20250308-WA0053.jpg",
+    category: "Bebé",
+  },
+  {
+    id: 39,
+    title: "Campera",
+    description: "Lana",
+    waist: "",
+    price: 0.000,
+    image: "/images/works/work39/IMG-20250308-WA0062.jpg",
+    category: "Bebé",
+  },
 ]
