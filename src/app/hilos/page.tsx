@@ -23,11 +23,11 @@ const hilosData = [
 
 const Hilos = () => {
   return (
-    <>
-      <h2 className="flex justify-center bg-white font-medium text-2xl lg:text-2xl px-10 py-3 lg:px-16 drop-shadow-md">
+    <div className="min-h-screen flex flex-col justify-start items-center">
+      <h2 className="w-screen flex justify-center bg-white font-medium text-2xl py-3 drop-shadow-md">
         Hilos
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 lg:p-16 lg:py-[69px]">
+      <div className="w-full max-w-7xl p-6 lg:p-16 flex flex-col lg:flex-row lg:gap-8">
         {hilosData.map((accessorie, index) => (
           <CardProducts
             key={index}
@@ -36,7 +36,7 @@ const Hilos = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
