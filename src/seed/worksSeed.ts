@@ -155,7 +155,7 @@ export const worksData: Product[] = [
   },
   {
     id: 17,
-    title: "Remera candia",
+    title: "Remera Amira",
     description: "Hilo de algodón",
     waist: "",
     price: 134.000,
@@ -164,7 +164,7 @@ export const worksData: Product[] = [
   },
   {
     id: 18,
-    title: "Mini sueter jazmín",
+    title: "Top Coco",
     description: "Hilo Fidelio",
     waist: "",
     price: 123.000,
@@ -200,7 +200,7 @@ export const worksData: Product[] = [
   },
   {
     id: 22,
-    title: "Sueter",
+    title: "Sweater Pampa",
     description: "Lana",
     waist: "",
     price: 0.000,
@@ -218,8 +218,8 @@ export const worksData: Product[] = [
   },
   {
     id: 24,
-    title: "Gorro ganchillo y cuello tricot",
-    description: "Lana cashmilon",
+    title: "Gorro ganchillo y cuello",
+    description: "Lana cashmilon - Tricot",
     waist: "",
     price: 110.000,
     image: "/images/works/work24/gorro1.jpg",
@@ -236,15 +236,6 @@ export const worksData: Product[] = [
   },
   {
     id: 26,
-    title: "Canasta",
-    description: "Hilo cordón",
-    waist: "",
-    price: 78.000,
-    image: "/images/works/work26/bolso2.jpg",
-    category: "Mujer",
-  },
-  {
-    id: 27,
     title: "Cuello",
     description: "Lana",
     waist: "",
@@ -253,8 +244,8 @@ export const worksData: Product[] = [
     category: "Mujer",
   },
   {
-    id: 28,
-    title: "Pantalon Olive",
+    id: 27,
+    title: "Pantalon Chilly",
     description: "Hilo macramé",
     waist: "",
     price: 245.000,
@@ -262,7 +253,7 @@ export const worksData: Product[] = [
     category: "Mujer",
   },
   {
-    id: 29,
+    id: 28,
     title: "Oso",
     description: "Amigurumi",
     waist: "",
@@ -271,16 +262,16 @@ export const worksData: Product[] = [
     category: "Niño",
   },
   {
-    id: 30,
+    id: 29,
     title: "Oso",
     description: "Lana",
     waist: "",
     price: 0.000,
-    image: "/images/works/work30/Oso7.jpg",
+    image: "/images/works/work30/Oso5.jpg",
     category: "Niño",
   },
   {
-    id: 31,
+    id: 30,
     title: "Body",
     description: "Lana",
     waist: "",
@@ -289,7 +280,7 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 32,
+    id: 31,
     title: "Gorro",
     description: "Lana",
     waist: "",
@@ -298,7 +289,7 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 33,
+    id: 32,
     title: "Gorro bebé",
     description: "Lana cisne",
     waist: "",
@@ -307,7 +298,7 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 34,
+    id: 33,
     title: "Chaleco roma",
     description: "Lana cisne",
     waist: "",
@@ -316,7 +307,7 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 35,
+    id: 34,
     title: "Chaleco nieve",
     description: "Lana cisne",
     waist: "",
@@ -325,7 +316,7 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 36,
+    id: 35,
     title: "Campera",
     description: "Lana",
     waist: "",
@@ -334,8 +325,8 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 37,
-    title: "Body",
+    id: 36,
+    title: "Body Bebe Uno",
     description: "Lana",
     waist: "",
     price: 0.000,
@@ -343,8 +334,8 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 38,
-    title: "Body",
+    id: 37,
+    title: "Body Bebe Dos",
     description: "Amigurumi",
     waist: "",
     price: 0.000,
@@ -352,9 +343,9 @@ export const worksData: Product[] = [
     category: "Bebé",
   },
   {
-    id: 39,
-    title: "Campera Bebé Técnica tunecino",
-    description: "Lana cisne",
+    id: 38,
+    title: "Campera Bebe",
+    description: "Lana cisne Tecnica Tunecino",
     waist: "",
     price: 89.000,
     image: "/images/works/work39/IMG-20250308-WA0062.jpg",
