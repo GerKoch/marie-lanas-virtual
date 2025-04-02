@@ -21,10 +21,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Marie lanas",
-  description: "Tienda virtual de lanas y tejidos",
+  title: {
+    default: "Marie Lanas | Tienda de lanas y tejidos",
+    template: "%s | Marie Lanas",
+  },
+  description: "Venta online de lanas, ovillos, prendas tejidas y accesorios para el arte de tejer. Envíos a todo el país.",
+  keywords: ["lanas", "tienda de lanas", "ovillos", "prendas tejidas", "tejido artesanal", "Marie Lanas", "lanería", "crochet", "accesorios para tejer"],
+  metadataBase: new URL("https://marielanas.vercel.app/"),
+  robots: "index, follow",
+  openGraph: {
+    title: "Marie Lanas | Tienda de lanas y tejidos",
+    description: "Todo para tejedores y tejedoras: lanas, ovillos, accesorios y más.",
+    url: "https://marielanas.vercel.app/",
+    siteName: "Marie Lanas",
+    images: [
+      {
+        url: "/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Marie Lanas - Lanas y tejidos",
+      },
+    ],
+    type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png", rel: "apple-touch-icon" },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
