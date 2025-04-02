@@ -2,7 +2,7 @@ export function GET() {
   const body = `User-agent: *
 Allow: /
 
-Sitemap: https://marielanas.vercel.app/sitemap.xml`;
+Sitemap: https://www.marielanas.com/sitemap.xml`;
 
   return new Response(body, {
     headers: {

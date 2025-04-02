@@ -6,7 +6,7 @@ ${pages
       .map(
         (page) => `
   <url>
-    <loc>https://marielanas.vercel.app/${page}</loc>
+    <loc>https://www.marielanas.com/${page}</loc>
   </url>`
       )
       .join("")}

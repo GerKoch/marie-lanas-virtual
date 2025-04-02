@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   },
   description: "Venta online de lanas, ovillos, prendas tejidas y accesorios para el arte de tejer. Envíos a todo el país.",
   keywords: ["lanas", "tienda de lanas", "ovillos", "prendas tejidas", "tejido artesanal", "Marie Lanas", "lanería", "crochet", "accesorios para tejer"],
-  metadataBase: new URL("https://marielanas.vercel.app/"),
+  metadataBase: new URL("https://www.marielanas.com"),
   robots: "index, follow",
   openGraph: {
     title: "Marie Lanas | Tienda de lanas y tejidos",
     description: "Todo para tejedores y tejedoras: lanas, ovillos, accesorios y más.",
-    url: "https://marielanas.vercel.app/",
+    url: "https://www.marielanas.com",
     siteName: "Marie Lanas",
     images: [
       {
@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  other: {
+    "google-site-verification": "tblHiMYdoDBrZf_PXtLy2MdI3BbrBarpxV12BqnC5Do",
+  },
 };
 
 export default function RootLayout({
