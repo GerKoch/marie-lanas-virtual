@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProductPrice from "../DescuentoProducto/ProductPriceProps";
+import AddToCartButton from "../cart/AddToCartButton";
 
 interface Props {
   id: number;
@@ -12,21 +13,20 @@ interface Props {
 
 const CardWorks = ({ img, title, description, price }: Props) => {
   return (
-    <div className="relative hover:bg-gray-100 bg-white w-full h-full">
-      <div className="relative w-full h-[500px]">
+    <div className="relative hover:bg-gray-100 bg-white w-full rounded-lg overflow-hidden shadow-md">
+      <div className="relative w-full aspect-[3/4]">
         <Image
           src={img}
           alt={title}
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+          fill
+          className="object-cover"
         />
       </div>
       <div className="absolute top-0 right-0 bg-black text-white py-1 px-4 rounded-l-full text-xl shadow-sm shadow-black/50">
         <p>10% OFF</p>
       </div>
-      <div className="flex flex-col justify-start items-center space-y-2 p-5 border-pink-300 h-32">
-        <h2 className="flex items-center justify-center text-center text-black text-xl uppercase">
+      <div className="flex flex-col justify-start items-center space-y-2 p-5">
+        <h2 className="text-center text-black text-xl uppercase">
           {title}
         </h2>
         <p className="text-black text-sm uppercase">
@@ -34,6 +34,11 @@ const CardWorks = ({ img, title, description, price }: Props) => {
         </p>
         <div className="font-bold text-base flex gap-4">
           <ProductPrice price={price} />
+        </div>
+        <div>
+          <p className="text-gray-700 font-semibold">${price}</p>
+
+          <AddToCartButton id={title} name={title} price={price} />
         </div>
       </div>
     </div>

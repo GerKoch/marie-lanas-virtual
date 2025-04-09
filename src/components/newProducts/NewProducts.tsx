@@ -3,47 +3,32 @@ import Link from "next/link"
 
 const NewProducts = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="grid w-full h-full grid-cols-1 sm:grid-cols-3 gap-10 py-3 p-2 lg:p-10 drop-shadow-md">
-        <Link href="/hilos" className="relative hover:bg bg-white">
-          <Image
-            src={"/images/bg/bg2.jpg"}
-            alt={"Work1"}
-            width={3000}
-            height={3000}
-            className="h-full w-full object-cover rounded-md transition-all duration-300 transform hover:shadow-2xl"
-          />
-          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
-            <span>HILOS</span>
-          </div>
-        </Link>
-        <Link href="/lanas" className="relative hover:bg bg-white">
-          <Image
-            src={"/images/bg/bg1.jpg"}
-            alt={"Work1"}
-            width={3000}
-            height={3000}
-            className="h-full w-auto object-cover rounded-md transition-all duration-300 transform hover:shadow-2xl"
-          />
-          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
-            <span>LANAS</span>
-          </div>
-        </Link>
-        <Link href="/trabajos" className="relative hover:bg bg-white">
-          <Image
-            src={"/images/bg/bg3.jpg"}
-            alt={"Work1"}
-            width={3000}
-            height={3000}
-            className="h-full w-auto object-cover rounded-md transition-all duration-300 transform hover:shadow-2xl"
-          />
-          <div className="absolute bottom-10 left-10 bg-transparent text-pink-100 py-1 text-2xl border-b-4 border-pink-100">
-            <span>TRABAJOS</span>
-          </div>
-        </Link>
+    <div className="flex flex-col">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 sm:p-6 md:p-10">
+        {[
+          { href: "/hilos", img: "/images/bg/bg2.jpg", label: "HILOS" },
+          { href: "/lanas", img: "/images/bg/bg1.jpg", label: "LANAS" },
+          { href: "/trabajos", img: "/images/bg/bg3.jpg", label: "TRABAJOS" },
+        ].map(({ href, img, label }) => (
+          <Link
+            href={href}
+            key={href}
+            className="relative aspect-[3/4] overflow-hidden rounded-md group"
+          >
+            <Image
+              src={img}
+              alt={label}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute bottom-4 left-4 bg-black/50 text-white px-3 py-1 text-xl border-b-2 border-pink-200 rounded-t">
+              <span>{label}</span>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   )
 }
 
-export default NewProducts 
+export default NewProducts;

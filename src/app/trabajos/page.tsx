@@ -12,7 +12,7 @@ const Trabajos = () => {
   const brands = ["Mujer", "Niño", "Bebé"]
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <h2 className="w-screen flex justify-center bg-white font-medium text-2xl lg:text-2xl px-10 py-3 lg:px-16 drop-shadow-md">
         Nuestros trabajos
       </h2>

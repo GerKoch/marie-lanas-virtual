@@ -61,22 +61,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white w-full overflow-x-hidden`}
       >
-        <HeaderTop />
-        <Navbar />
-        {children}
-        <div>
-          <WhatsAppComponent />
-          <Footer />
+        <div className="min-h-screen flex flex-col mx-auto max-w-screen-2xl">
+          <HeaderTop />
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <div className="relative">
+            <WhatsAppComponent />
+            <Footer />
+          </div>
         </div>
 
       </body>

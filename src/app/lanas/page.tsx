@@ -14,7 +14,7 @@ const Lanas = () => {
   const brands = ["Nube", "Mia", "Cisne Super bebe", "Madeja Nube"]
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <h2 className="w-screen flex justify-center bg-white font-medium text-2xl py-3 drop-shadow-md">
         Lanas
       </h2>
@@ -30,6 +30,7 @@ const Lanas = () => {
               key={index}
               img={accessorie.image}
               title={accessorie.title}
+              price={accessorie.price}
             />
           ))}
         </div>

@@ -13,6 +13,7 @@ const Accesorios = () => {
             key={index}
             img={accessorie.image}
             title={accessorie.title}
+            price={accessorie.price}
           />
         ))}
       </div>

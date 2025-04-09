@@ -3,7 +3,7 @@ import NewProducts from "@/components/newProducts/NewProducts";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-full overflow-x-hidden">
       <Hero />
       <NewProducts />
     </main>
