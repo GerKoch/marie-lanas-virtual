@@ -1,7 +1,6 @@
 "use client"
 
 import { useCartStore } from "@/store/useCartStore"
-import Link from "next/link"
 
 const CartPage = () => {
   const cart = useCartStore((state) => state.cart)
