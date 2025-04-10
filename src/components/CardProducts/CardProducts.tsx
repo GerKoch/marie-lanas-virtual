@@ -10,7 +10,7 @@ interface Props {
 
 }
 
-const CardProduct = ({ img, title, description, price }: Props) => {
+const CardProduct = ({ img, title, price }: Props) => {
   return (
     <div className="relative bg-white w-full max-w-[300px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.02]">
       <div className="relative w-full aspect-[3/4]">
