@@ -24,14 +24,14 @@ const Lanas = () => {
           selectedCategory={selectedBrand}
           setSelectedCategory={setSelectedBrand}
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:p-0 lg:w-[800px]">
+        <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-8 lg:p-0 place-items-center drop-shadow-md lg:w-[900px]">
           {filteredProducts.map((accessorie, index) => (
             <CardProducts
               key={index}
               img={accessorie.image}
               title={accessorie.title}
               price={accessorie.price}
-            />
+              description={accessorie.description} />
           ))}
         </div>
       </div>

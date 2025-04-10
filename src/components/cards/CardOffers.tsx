@@ -12,16 +12,21 @@ interface Props {
 
 const CardOffers = ({ title, description, img, price }: Props) => {
   return (
-    <div className="flex flex-col mx-auto hover:bg bg-white w-full rounded">
-      <Image
-        src={img}
-        alt={title}
-        width={200}
-        height={300}
-        className="object-cover w-full h-[350px] rounded-t"
-      />
-      <div className="flex flex-col justify-center items-center space-y-2 p-2 h-full">
-        <h2 className="flex items-center justify-center text-center text-black text-xl uppercase">{title}</h2>
+    <div className="relative bg-white w-full max-w-[300px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.02]">
+      <div className="relative w-full aspect-[3/4]">
+        <Image
+          src={img}
+          alt={title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 300px"
+        />
+      </div>
+
+      <div className="flex flex-col justify-start items-center space-y-2 p-4">
+        <h2 className="text-center text-black text-lg font-semibold uppercase">
+          {title}
+        </h2>
         <h1>Color disponible en imagen</h1>
         <p className="flex text-center p-2">{description}</p>
         <p className="text-gray-700 font-semibold">${price}</p>

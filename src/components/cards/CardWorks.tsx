@@ -33,11 +33,14 @@ const CardWorks = ({ img, title, description, price }: Props) => {
           {description}
         </p>
         <div className="font-bold text-base flex gap-4">
-          <ProductPrice price={price} />
+          {price > 0 ? (
+            <ProductPrice price={price} />
+          ) : (
+            <p className="text-gary-500 font-semibold text-sm">Consultar precio</p>
+          )
+          }
         </div>
         <div>
-          <p className="text-gray-700 font-semibold">${price}</p>
-
           <AddToCartButton id={title} name={title} price={price} />
         </div>
       </div>
